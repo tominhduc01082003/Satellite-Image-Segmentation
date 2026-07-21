@@ -1,0 +1,229 @@
+paths:
+  # ==========================================================
+  # ROOT DATA
+  # ==========================================================
+  images_dir: "Resource/Images"
+  labels_dir: "Resource/Labels"
+  masks_dir: "Resource/Masks"
+
+  # ==========================================================
+  # PATCH DATA
+  # ==========================================================
+  patches_dir: "Resource/Patches"
+
+  # ==========================================================
+  # REPORT
+  # ==========================================================
+  reports_dir: "Report"
+
+  # ==========================================================
+  # LABEL PATH
+  # ==========================================================
+  train_labels_dir: "Resource/Labels/Train"
+  val_labels_dir: "Resource/Labels/Val"
+  test_labels_dir: "Resource/Labels/Test"
+
+  outputs_dir: "Outputs"
+
+  default_check_shp: "img_2.shp"
+  
+
+# ==========================================================
+# PREPROCESSING
+# ==========================================================
+
+preprocessing:
+
+  overlap_min_area: 1e-10
+
+  overlap_grid_size: 0.001
+
+  max_iterations: 20
+
+  splits:
+    - Train
+    - Val
+    - Test
+
+  class_column: "class_id"
+
+  mask_suffix: "_mask"
+
+
+# ==========================================================
+# PATCH GENERATOR
+# ==========================================================
+
+patch:
+
+  # Patch size (pixel)
+  patch_size: 256
+
+  # Sliding window stride
+  stride: 64
+
+  # Nếu False chỉ lưu patch đủ kích thước
+  keep_partial: false
+
+  image_suffix: ".tif"
+
+  mask_suffix: "_mask.tif"
+
+
+# ==========================================================
+# DATASET
+# ==========================================================
+
+dataset:
+
+  image_glob: "*.tif"
+
+  mask_glob: "*_mask.tif"
+
+# ==========================================================
+# DATASET BALANCE
+# ==========================================================
+
+balance:
+
+  thresholds:
+
+    background: 0.00
+
+    very_sparse: 0.01
+
+    sparse: 0.10
+
+    normal: 0.40
+
+  keep_ratio:
+
+    background: 0.10
+
+    very_sparse: 1.00
+
+    sparse: 1.00
+
+    normal: 1.00
+
+    dense: 1.00
+
+  augmentation:
+
+    background: 4
+
+    very_sparse: 6
+
+    sparse: 1
+
+    normal: 1
+
+    dense: 1
+
+  apply_to:
+
+    - Train
+# ==========================================================
+# REPORT FILES
+# ==========================================================
+
+report_files:
+
+  patch_index_csv: "patch_index.csv"
+
+  patch_statistics_csv: "patch_statistics.csv"
+
+  patch_level_csv: "patch_level.csv"
+
+  balanced_patch_csv: "balanced_patch.csv"
+
+  dataset_report_json: "dataset_report.json"
+
+  patch_distribution_png: "patch_distribution.png"
+# ==========================================================
+# MODEL
+# ==========================================================
+
+model:
+
+  architecture: "unet"
+
+  encoder_name: "resnet34"
+
+  encoder_weights: "imagenet"
+
+  in_channels: 3
+
+  num_classes: 2
+
+# ==========================================================
+# TRAINING
+# ==========================================================
+
+training:
+
+  # Epoch
+  epochs: 10
+
+  # Batch size
+  batch_size: 8
+
+  # Number of workers
+  num_workers: 4
+
+  # Learning rate
+  learning_rate: 0.0001
+
+  # Weight decay
+  weight_decay: 0.0001
+
+  # Optimizer
+  optimizer: "adamw"
+
+  # Scheduler
+  scheduler: "cosine"
+
+  # Loss function
+  loss: cross_entropy
+
+  # Minimum learning rate
+  min_lr: 1e-6
+
+  # Warmup epochs
+  warmup_epochs: 5
+
+  # Mixed Precision
+  amp: true
+
+  # Gradient clipping
+  grad_clip: 1.0
+
+  # Random seed
+  seed: 42
+
+  # Shuffle train loader
+  shuffle: false
+
+  # Pin memory
+  pin_memory: true
+
+  # Drop last batch
+  drop_last: true
+
+  # Save best model
+  save_best_only: true
+
+  # Save every N epochs
+  save_interval: 5
+
+  # Early stopping
+  early_stopping: 15
+
+  # Checkpoint folder
+  checkpoint_dir: "Checkpoint"
+
+  # Log folder
+  log_dir: "Logs"
+
+  # TensorBoard
+  tensorboard: true
