@@ -1,0 +1,38 @@
+{
+    "total_patches": 3745,
+    "kept_patches": 2301,
+    "removed_patches": 1444,
+    "keep_ratio": 0.6144,
+    "levels": {
+        "background": {
+            "total": 1595,
+            "kept": 151,
+            "removed": 1444,
+            "augment_times": 4
+        },
+        "very_sparse": {
+            "total": 126,
+            "kept": 126,
+            "removed": 0,
+            "augment_times": 6
+        },
+        "sparse": {
+            "total": 470,
+            "kept": 470,
+            "removed": 0,
+            "augment_times": 1
+        },
+        "normal": {
+            "total": 803,
+            "kept": 803,
+            "removed": 0,
+            "augment_times": 1
+        },
+        "dense": {
+            "total": 751,
+            "kept": 751,
+            "removed": 0,
+            "augment_times": 1
+        }
+    }
+}
