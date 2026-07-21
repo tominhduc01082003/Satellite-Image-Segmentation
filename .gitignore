@@ -2,4 +2,4 @@
 Resource/
 __pycache__/
 .ipynb_checkpoints/
-ResNet34.zip
+Outputs/Checkpoints/
