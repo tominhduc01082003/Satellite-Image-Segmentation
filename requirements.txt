@@ -1,0 +1,18 @@
+geopandas
+rasterio
+numpy
+shapely
+fiona
+pyproj
+tqdm
+tensorboard
+opencv-python
+albumentations
+torch==2.8.0
+torchvision==0.23.0
+
+torchgeo
+segmentation-models-pytorch
+torchmetrics
+
+--extra-index-url https://download.pytorch.org/whl/cu128
