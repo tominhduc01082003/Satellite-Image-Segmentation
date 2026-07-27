@@ -55,7 +55,6 @@ The project supports the entire workflow, including:
 - [Inference](#inference)
 - [Evaluation](#evaluation)
 - [Results](#results)
-- [Requirements](#requirements)
 - [Contact](#contact)
 
 ---
@@ -318,7 +317,7 @@ Configure hyperparameters inside
 Scripts/config/config.py
 ```
 
-or
+and
 
 ```text
 Scripts/config/config.yaml
@@ -388,22 +387,29 @@ Generated reports include
 - Prediction outputs
 - Evaluation metrics
 
-Reports are automatically saved inside
+The following results were obtained on the **Test** dataset.
+
+| Metric         |           Value |
+| -------------- | --------------: |
+| Model          | UNet (ResNet34) |
+| Test Samples   |              49 |
+| Test Loss      |          0.2822 |
+| Dice Score     |      **85.00%** |
+| IoU            |      **73.91%** |
+| Precision      |          78.22% |
+| Recall         |          93.08% |
+| F1-Score       |          85.00% |
+| Pixel Accuracy |          94.10% |
+
+- Reports are automatically saved inside
 
 ```text
 Report/
-```
 
----
+```
 
 ---
 
 # Contact
 
-**Author**
-
-To Minh Duc
-
-**Email**
-
-ducto020803@gmail.com
+- To Minh Duc (ducto020803@gmail.com)
