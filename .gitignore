@@ -3,3 +3,4 @@ Resource/
 __pycache__/
 .ipynb_checkpoints/
 Outputs/Checkpoints/
+Outputs/Predictions/
