@@ -1,5 +1,5 @@
 ================================================================================
-TEST SET EVALUATION REPORT - 2026-07-20 23:23:54
+TEST SET EVALUATION REPORT - 2026-07-22 23:43:17
 ================================================================================
 
 [*] Tổng số mẫu trên tập Test cần đánh giá: 49 patches
@@ -8,13 +8,13 @@ KẾT QUẢ ĐÁNH GIÁ TRÊN TẬP TEST:
 ----------------------------------------
 Model Architecture : UNET (resnet34)
 Total Test Samples : 49
-Test Loss          : 0.1513
+Test Loss          : 0.2822
 ----------------------------------------
-Global Dice Score  : 0.8218 (82.18%)
-Global IoU Score   : 0.6974 (69.74%)
-Precision          : 0.7229 (72.29%)
-Recall (Sensitivity): 0.9520 (95.20%)
-F1-Score           : 0.8218 (82.18%)
-Pixel Accuracy     : 0.9258 (92.58%)
+Global Dice Score  : 0.8500 (85.00%)
+Global IoU Score   : 0.7391 (73.91%)
+Precision          : 0.7822 (78.22%)
+Recall (Sensitivity): 0.9308 (93.08%)
+F1-Score           : 0.8500 (85.00%)
+Pixel Accuracy     : 0.9410 (94.10%)
 ========================================
 

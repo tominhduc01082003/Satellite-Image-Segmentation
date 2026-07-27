@@ -1,60 +1,110 @@
 ================================================================================
 PRODUCTION TRAINING LOG
 ================================================================================
-[2026-07-20 22:28:45] KHỞI TẠO HỆ THỐNG TRÊN CUDA
+[2026-07-22 23:36:11] KHỞI TẠO HỆ THỐNG TRÊN CUDA
 Model: UNET | Encoder: resnet34
 Params: 24.44M Trainable | 0.00M Frozen | 24.44M Total
 
-[Epoch 001] Time: 41.3s | Val Speed: 275.6ms/img | Peak GPU: 0.8G | LR: 9.757730e-05
-  Train -> Loss: 0.3704 | Dice: 0.3796 | IoU: 0.2342
-  Valid -> Loss: 0.4726 | Dice: 0.7515 | IoU: 0.6019
-  🔥 KỶ LỤC MỚI (Best Dice: 0.7515 | Loss: 0.4726)
+[Epoch 001] Time: 42.3s | Val Speed: 281.5ms/img | Peak GPU: 0.8G | LR: 9.939057e-05
+  Train -> Loss: 0.3622 | Dice: 0.3833 | IoU: 0.2371
+  Valid -> Loss: 0.5079 | Dice: 0.7358 | IoU: 0.5821
+  🔥 KỶ LỤC MỚI (Best Dice: 0.7358 | Loss: 0.5079)
 
-[Epoch 002] Time: 14.9s | Val Speed: 3.6ms/img | Peak GPU: 0.8G | LR: 9.054634e-05
-  Train -> Loss: 0.2992 | Dice: 0.4635 | IoU: 0.3016
-  Valid -> Loss: 0.3982 | Dice: 0.7711 | IoU: 0.6275
-  🔥 KỶ LỤC MỚI (Best Dice: 0.7711 | Loss: 0.3982)
+[Epoch 002] Time: 14.9s | Val Speed: 3.6ms/img | Peak GPU: 0.8G | LR: 9.757730e-05
+  Train -> Loss: 0.3093 | Dice: 0.4696 | IoU: 0.3068
+  Valid -> Loss: 0.5103 | Dice: 0.7372 | IoU: 0.5837
+  🔥 KỶ LỤC MỚI (Best Dice: 0.7372 | Loss: 0.5103)
 
-[Epoch 003] Time: 14.9s | Val Speed: 3.7ms/img | Peak GPU: 0.8G | LR: 7.959537e-05
-  Train -> Loss: 0.2765 | Dice: 0.4769 | IoU: 0.3131
-  Valid -> Loss: 0.4301 | Dice: 0.7906 | IoU: 0.6537
-  🔥 KỶ LỤC MỚI (Best Dice: 0.7906 | Loss: 0.4301)
-
-[Epoch 004] Time: 15.0s | Val Speed: 3.8ms/img | Peak GPU: 0.8G | LR: 6.579634e-05
-  Train -> Loss: 0.2780 | Dice: 0.4795 | IoU: 0.3154
-  Valid -> Loss: 0.4670 | Dice: 0.7178 | IoU: 0.5598
+[Epoch 003] Time: 14.9s | Val Speed: 3.9ms/img | Peak GPU: 0.8G | LR: 9.460482e-05
+  Train -> Loss: 0.2674 | Dice: 0.5610 | IoU: 0.3899
+  Valid -> Loss: 0.5041 | Dice: 0.7265 | IoU: 0.5704
   ⚠️ Không cải thiện (1/15)
 
-[Epoch 005] Time: 15.2s | Val Speed: 8.5ms/img | Peak GPU: 0.8G | LR: 5.050000e-05
-  Train -> Loss: 0.2690 | Dice: 0.4826 | IoU: 0.3180
-  Valid -> Loss: 0.3574 | Dice: 0.7985 | IoU: 0.6646
-  🔥 KỶ LỤC MỚI (Best Dice: 0.7985 | Loss: 0.3574)
-
-[Epoch 006] Time: 15.0s | Val Speed: 3.7ms/img | Peak GPU: 0.8G | LR: 3.520366e-05
-  Train -> Loss: 0.2609 | Dice: 0.5934 | IoU: 0.4219
-  Valid -> Loss: 0.3457 | Dice: 0.8083 | IoU: 0.6783
-  🔥 KỶ LỤC MỚI (Best Dice: 0.8083 | Loss: 0.3457)
-
-[Epoch 007] Time: 15.0s | Val Speed: 3.5ms/img | Peak GPU: 0.8G | LR: 2.140463e-05
-  Train -> Loss: 0.2470 | Dice: 0.5865 | IoU: 0.4150
-  Valid -> Loss: 0.3414 | Dice: 0.8045 | IoU: 0.6729
-  ⚠️ Không cải thiện (1/15)
-
-[Epoch 008] Time: 15.1s | Val Speed: 3.6ms/img | Peak GPU: 0.8G | LR: 1.045366e-05
-  Train -> Loss: 0.2447 | Dice: 0.5918 | IoU: 0.4202
-  Valid -> Loss: 0.5164 | Dice: 0.6785 | IoU: 0.5135
+[Epoch 004] Time: 15.0s | Val Speed: 4.0ms/img | Peak GPU: 0.8G | LR: 9.054634e-05
+  Train -> Loss: 0.2743 | Dice: 0.5753 | IoU: 0.4038
+  Valid -> Loss: 0.4988 | Dice: 0.7213 | IoU: 0.5641
   ⚠️ Không cải thiện (2/15)
 
-[Epoch 009] Time: 15.2s | Val Speed: 3.7ms/img | Peak GPU: 0.8G | LR: 3.422702e-06
-  Train -> Loss: 0.2477 | Dice: 0.6059 | IoU: 0.4346
-  Valid -> Loss: 0.4090 | Dice: 0.7810 | IoU: 0.6407
+[Epoch 005] Time: 15.3s | Val Speed: 8.7ms/img | Peak GPU: 0.8G | LR: 8.550179e-05
+  Train -> Loss: 0.2612 | Dice: 0.5483 | IoU: 0.3777
+  Valid -> Loss: 0.7929 | Dice: 0.6603 | IoU: 0.4929
   ⚠️ Không cải thiện (3/15)
 
-[Epoch 010] Time: 15.4s | Val Speed: 8.9ms/img | Peak GPU: 0.8G | LR: 1.000000e-06
-  Train -> Loss: 0.2365 | Dice: 0.6060 | IoU: 0.4347
-  Valid -> Loss: 0.4071 | Dice: 0.7712 | IoU: 0.6275
+[Epoch 006] Time: 16.0s | Val Speed: 3.6ms/img | Peak GPU: 0.8G | LR: 7.959537e-05
+  Train -> Loss: 0.2613 | Dice: 0.5963 | IoU: 0.4248
+  Valid -> Loss: 0.5217 | Dice: 0.7041 | IoU: 0.5434
   ⚠️ Không cải thiện (4/15)
 
+[Epoch 007] Time: 15.0s | Val Speed: 3.6ms/img | Peak GPU: 0.8G | LR: 7.297253e-05
+  Train -> Loss: 0.2506 | Dice: 0.5878 | IoU: 0.4162
+  Valid -> Loss: 0.3692 | Dice: 0.7945 | IoU: 0.6591
+  🔥 KỶ LỤC MỚI (Best Dice: 0.7945 | Loss: 0.3692)
+
+[Epoch 008] Time: 15.0s | Val Speed: 3.7ms/img | Peak GPU: 0.8G | LR: 6.579634e-05
+  Train -> Loss: 0.2523 | Dice: 0.6365 | IoU: 0.4668
+  Valid -> Loss: 0.3590 | Dice: 0.8003 | IoU: 0.6671
+  🔥 KỶ LỤC MỚI (Best Dice: 0.8003 | Loss: 0.3590)
+
+[Epoch 009] Time: 15.0s | Val Speed: 3.6ms/img | Peak GPU: 0.8G | LR: 5.824351e-05
+  Train -> Loss: 0.2403 | Dice: 0.6479 | IoU: 0.4792
+  Valid -> Loss: 0.3777 | Dice: 0.7698 | IoU: 0.6258
+  ⚠️ Không cải thiện (1/15)
+
+[Epoch 010] Time: 15.2s | Val Speed: 8.4ms/img | Peak GPU: 0.8G | LR: 5.050000e-05
+  Train -> Loss: 0.2460 | Dice: 0.6550 | IoU: 0.4870
+  Valid -> Loss: 0.3623 | Dice: 0.7752 | IoU: 0.6330
+  ⚠️ Không cải thiện (2/15)
+
+[Epoch 011] Time: 15.1s | Val Speed: 3.4ms/img | Peak GPU: 0.8G | LR: 4.275649e-05
+  Train -> Loss: 0.2409 | Dice: 0.6053 | IoU: 0.4340
+  Valid -> Loss: 0.4648 | Dice: 0.7218 | IoU: 0.5647
+  ⚠️ Không cải thiện (3/15)
+
+[Epoch 012] Time: 15.1s | Val Speed: 3.9ms/img | Peak GPU: 0.8G | LR: 3.520366e-05
+  Train -> Loss: 0.2299 | Dice: 0.6354 | IoU: 0.4657
+  Valid -> Loss: 0.4435 | Dice: 0.7654 | IoU: 0.6200
+  ⚠️ Không cải thiện (4/15)
+
+[Epoch 013] Time: 15.1s | Val Speed: 3.7ms/img | Peak GPU: 0.8G | LR: 2.802747e-05
+  Train -> Loss: 0.2311 | Dice: 0.6533 | IoU: 0.4851
+  Valid -> Loss: 0.4886 | Dice: 0.7448 | IoU: 0.5934
+  ⚠️ Không cải thiện (5/15)
+
+[Epoch 014] Time: 15.1s | Val Speed: 3.7ms/img | Peak GPU: 0.8G | LR: 2.140463e-05
+  Train -> Loss: 0.2207 | Dice: 0.6711 | IoU: 0.5050
+  Valid -> Loss: 0.3826 | Dice: 0.7940 | IoU: 0.6584
+  ⚠️ Không cải thiện (6/15)
+
+[Epoch 015] Time: 15.4s | Val Speed: 8.8ms/img | Peak GPU: 0.8G | LR: 1.549821e-05
+  Train -> Loss: 0.2205 | Dice: 0.7005 | IoU: 0.5391
+  Valid -> Loss: 0.3814 | Dice: 0.7944 | IoU: 0.6589
+  ⚠️ Không cải thiện (7/15)
+
+[Epoch 016] Time: 15.0s | Val Speed: 3.7ms/img | Peak GPU: 0.8G | LR: 1.045366e-05
+  Train -> Loss: 0.2195 | Dice: 0.6711 | IoU: 0.5051
+  Valid -> Loss: 0.3654 | Dice: 0.8038 | IoU: 0.6720
+  🔥 KỶ LỤC MỚI (Best Dice: 0.8038 | Loss: 0.3654)
+
+[Epoch 017] Time: 15.2s | Val Speed: 3.9ms/img | Peak GPU: 0.8G | LR: 6.395177e-06
+  Train -> Loss: 0.2171 | Dice: 0.6804 | IoU: 0.5156
+  Valid -> Loss: 0.3669 | Dice: 0.7897 | IoU: 0.6525
+  ⚠️ Không cải thiện (1/15)
+
+[Epoch 018] Time: 15.1s | Val Speed: 3.8ms/img | Peak GPU: 0.8G | LR: 3.422702e-06
+  Train -> Loss: 0.2228 | Dice: 0.6767 | IoU: 0.5114
+  Valid -> Loss: 0.3378 | Dice: 0.8125 | IoU: 0.6842
+  🔥 KỶ LỤC MỚI (Best Dice: 0.8125 | Loss: 0.3378)
+
+[Epoch 019] Time: 15.9s | Val Speed: 4.4ms/img | Peak GPU: 0.8G | LR: 1.609427e-06
+  Train -> Loss: 0.2213 | Dice: 0.6779 | IoU: 0.5127
+  Valid -> Loss: 0.3417 | Dice: 0.8092 | IoU: 0.6796
+  ⚠️ Không cải thiện (1/15)
+
+[Epoch 020] Time: 16.7s | Val Speed: 10.3ms/img | Peak GPU: 0.8G | LR: 1.000000e-06
+  Train -> Loss: 0.2261 | Dice: 0.6635 | IoU: 0.4965
+  Valid -> Loss: 0.3417 | Dice: 0.8104 | IoU: 0.6812
+  ⚠️ Không cải thiện (2/15)
+
 ================================================================================
-🎉 HUẤN LUYỆN HOÀN TẤT! Best Epoch: 6 | Best Dice: 0.8083
+🎉 HUẤN LUYỆN HOÀN TẤT! Best Epoch: 18 | Best Dice: 0.8125
 ================================================================================

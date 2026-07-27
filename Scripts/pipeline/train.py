@@ -186,6 +186,7 @@ def calculate_metrics(outputs: torch.Tensor, masks: torch.Tensor):
     else:
         preds = torch.argmax(outputs, dim=1).view(-1)
         targets = masks.long().view(-1)
+        # Chỉ tính Dice trên các lớp Foreground (Loại bỏ nền 0)
         for cls in range(1, NUM_CLASSES):
             p_cls = (preds == cls).float()
             t_cls = (targets == cls).float()
@@ -385,7 +386,7 @@ def main():
 
     if resume_file.exists():
         try:
-            chkpt = torch.load(resume_file, map_location=DEVICE)
+            chkpt = torch.load(resume_file, map_location=DEVICE, weights_only=False)
             model.load_state_dict(chkpt["model_state_dict"])
             optimizer.load_state_dict(chkpt["optimizer_state_dict"])
             if scheduler and chkpt.get("scheduler_state_dict"):
@@ -592,6 +593,9 @@ def main():
             CSV_HISTORY, mode="a", header=not CSV_HISTORY.exists(), index=False
         )
 
+        # CẬP NHẬT BIỂU ĐỒ LIÊN TỤC SAU MỖI EPOCH
+        plot_training_curves()
+
         is_best = False
         if v_dice > best_dice:
             is_best = True
@@ -623,7 +627,6 @@ def main():
             write_log(stop_msg)
             break
 
-    plot_training_curves()
     done_msg = (
         "\n"
         + "=" * 80

@@ -3,11 +3,9 @@ import geopandas as gpd
 from shapely import set_precision
 import sys
 
-ROOT_DIR = (
-    Path(__file__).resolve().parent.parent.parent
-)  # trả về thư mục gốc Build_CNN_Segmentation
+ROOT_DIR = Path(__file__).resolve().parent.parent.parent
 if str(ROOT_DIR) not in sys.path:
-    sys.path.append(str(ROOT_DIR))  # thêm vô biến môi trường
+    sys.path.insert(0, str(ROOT_DIR))
 from Scripts.config.config import MIN_AREA, GRID_SIZE
 from Scripts.config import config
 

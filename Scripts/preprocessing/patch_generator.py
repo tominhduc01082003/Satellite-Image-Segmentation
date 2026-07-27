@@ -83,7 +83,7 @@ def get_mask_path(image_path: Path) -> Path:
 
     img_1.tif
 
-    →
+    ->
 
     img_1_mask.tif
     """

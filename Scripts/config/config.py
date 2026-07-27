@@ -357,7 +357,7 @@ TRAINING_CONFIG = _yaml_data.get(
 EPOCHS = int(
     TRAINING_CONFIG.get(
         "epochs",
-        3,
+        20,
     )
 )
 
@@ -476,7 +476,7 @@ SAVE_INTERVAL = int(
 EARLY_STOPPING = int(
     TRAINING_CONFIG.get(
         "early_stopping",
-        20,
+        15,
     )
 )
 

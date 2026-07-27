@@ -163,7 +163,7 @@ model:
 training:
 
   # Epoch
-  epochs: 10
+  epochs: 20
 
   # Batch size
   batch_size: 8
@@ -220,7 +220,7 @@ training:
   early_stopping: 15
 
   # Checkpoint folder
-  checkpoint_dir: "Checkpoint"
+  checkpoint_dir: "Checkpoints"
 
   # Log folder
   log_dir: "Logs"

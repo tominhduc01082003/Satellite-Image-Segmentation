@@ -21,14 +21,10 @@ from tqdm import tqdm
 import segmentation_models_pytorch as smp
 from torch.amp import autocast
 
-# ==========================================================
-# CẤU HÌNH ĐƯỜNG DẪN & IMPORTS
-# ==========================================================
 ROOT_DIR = Path(__file__).resolve().parent.parent.parent
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
-# Import mọi thứ trực tiếp từ config.py để đồng bộ với config.yaml
 from Scripts.config.config import (
     MODEL_NAME,
     ENCODER_NAME,
@@ -221,11 +217,7 @@ def predict_large_image(model, image_path: Path, output_path: Path):
     )
 
 
-# ==========================================================
-# CHƯƠNG TRÌNH CHÍNH
-# ==========================================================
-
-
+# main
 def main():
     model = load_model("best_model.pth")
 
